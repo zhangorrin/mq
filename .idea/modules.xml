@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/activemq-spring-template/activemq-spring-template.iml" filepath="$PROJECT_DIR$/activemq-spring-template/activemq-spring-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-consumer/rabbitmq-sample-consumer.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-consumer/rabbitmq-sample-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-consumer2/rabbitmq-sample-consumer2.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-consumer2/rabbitmq-sample-consumer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-fanout-consumer/rabbitmq-sample-fanout-consumer.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-fanout-consumer/rabbitmq-sample-fanout-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-fanout-consumer2/rabbitmq-sample-fanout-consumer2.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-fanout-consumer2/rabbitmq-sample-fanout-consumer2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-fanout-producer/rabbitmq-sample-fanout-producer.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-fanout-producer/rabbitmq-sample-fanout-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-producer/rabbitmq-sample-producer.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-producer/rabbitmq-sample-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-producer-consumer/rabbitmq-sample-producer-consumer.iml" filepath="$PROJECT_DIR$/rabbitmq-sample/rabbitmq-sample-producer-consumer/rabbitmq-sample-producer-consumer.iml" />
+    </modules>
+  </component>
+</project>
