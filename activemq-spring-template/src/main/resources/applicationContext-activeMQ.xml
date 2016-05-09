@@ -35,7 +35,7 @@
         <constructor-arg ref="connectionFactory" />
         <!-- 非pub/sub模型（发布/订阅），即队列模式 -->
         <property name="pubSubDomain" value="false" />
-
+        <property name="sessionTransacted" value="true" />
     </bean>
 
     <!-- 定义JmsTemplate的Topic类型 -->
@@ -44,6 +44,7 @@
         <constructor-arg ref="connectionFactory" />
         <!-- pub/sub模型（发布/订阅） -->
         <property name="pubSubDomain" value="true" />
+        <property name="sessionTransacted" value="true" />
 
     </bean>
 
