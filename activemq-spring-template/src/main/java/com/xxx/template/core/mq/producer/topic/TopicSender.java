@@ -1,5 +1,6 @@
 package com.xxx.template.core.mq.producer.topic;
 
+import com.xxx.template.core.mq.MqMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jms.core.JmsTemplate;
@@ -36,5 +37,20 @@ public class TopicSender {
 			}
 		});
 	}
+
+	/**
+	 * 发送一条消息到指定的队列（目标）
+	 * @param topicName 队列名称
+	 * @param mqMessage 消息内容
+	 */
+	public void sendObjectMessage(String topicName,final MqMessage mqMessage){
+		jmsTemplate.send(topicName, new MessageCreator() {
+			@Override
+			public Message createMessage(Session session) throws JMSException {
+				return session.createObjectMessage(mqMessage);
+			}
+		});
+	}
+
 
 }

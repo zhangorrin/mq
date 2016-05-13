@@ -24,8 +24,12 @@ public class TestMain {
 
 		TopicSender topicSender = ctx.getBean(TopicSender.class);
 
-		queueSender.send("test.queue", "test.queue");
+		queueSender.send("ouyeell.erp.queue", "test.queue");
 
-		topicSender.send("test.topic", "test.topic");
+		topicSender.send("ouyeell.topic", "test.topic");
+
+		MqMessage mqMessage = new MqMessage(new String("afdafd"), "messageId", "appId", "functionId", "type");
+
+		topicSender.sendObjectMessage("ouyeell.topic",mqMessage);
 	}
 }
