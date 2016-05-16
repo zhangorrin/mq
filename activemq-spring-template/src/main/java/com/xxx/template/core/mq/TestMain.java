@@ -1,5 +1,6 @@
 package com.xxx.template.core.mq;
 
+import com.alibaba.fastjson.JSON;
 import com.xxx.template.core.mq.producer.queue.QueueSender;
 import com.xxx.template.core.mq.producer.topic.TopicSender;
 import org.springframework.context.ApplicationContext;
@@ -24,12 +25,15 @@ public class TestMain {
 
 		TopicSender topicSender = ctx.getBean(TopicSender.class);
 
-		queueSender.send("ouyeell.erp.queue", "test.queue");
+		queueSender.send("ouyeell.queue.erp", "test.ouyeell.queue.erp");
 
-		topicSender.send("ouyeell.topic", "test.topic");
+		queueSender.send("ouyeell.queue.uas", "test.ouyeell.queue.uas");
+
+
+		topicSender.send("ouyeell.topic.erp", "ouyeell.topic.erp.topic");
 
 		MqMessage mqMessage = new MqMessage(new String("afdafd"), "messageId", "appId", "functionId", "type");
 
-		topicSender.sendObjectMessage("ouyeell.topic",mqMessage);
+		topicSender.send("ouyeell.topic.erp", JSON.toJSONString(mqMessage));
 	}
 }
